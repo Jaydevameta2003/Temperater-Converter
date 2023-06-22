@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="temp.css">
+    <link rel="shortcut icon" href="/images/temperature-converter.webp" type="image/x-icon">
+</head>
+<body>
+    <div class="temp">
+        <h1>Temperature Converter</h1>
+    <div class="first" id="first">
+        <div class="input_box">
+            <input type="number" id="from">
+            <select id="fromUnit">
+                <option value="celsius">Degree-Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </div>
+        <div class="img">
+            <img src="/images/equal.png" alt="">
+        </div>
+        <div class="input_box">
+            <input type="number" id="to" readonly>
+            <select id="toUnit">
+                <option value="celsius">Degree-Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </div>
+        
+    </div>
+    <div class="second">
+        <button type="submit" onclick="convert()">Convert</button>
+    </div>
+    </div>
+    
+    <script src="temp.js" defer></script>
+</body>
+</html>
