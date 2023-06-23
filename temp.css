@@ -5,7 +5,7 @@
 
 body{
     font-family: 'Exo', sans-serif;
-    background-image: url(img1.png);
+    background-image: url(/images/img1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-repeat: repeat-y;
@@ -23,7 +23,7 @@ h1{
     backdrop-filter: blur(10px);
     width: 50%;
     border-radius: 15px;
-    height: 500px;
+    height: 520px;
     margin-top: 60px;
     display: flex;
     flex-direction:column;
@@ -54,11 +54,11 @@ h1{
 }
 
 input{
-    width: 200px;
+    width: 250px;
     height: 200px;
     background-color: rgb(5, 64, 75);
     color: white;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 600;
     text-align: center;
     border: none;
@@ -100,4 +100,24 @@ button:hover{
     transform: scale(1.08);
     cursor: pointer;
     color: white;
+}
+
+@media (width<=900px) {
+    .temp{
+        height: 700px;
+        width: 80%;
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    input{
+        height: 160px;
+        width:100%;
+        font-size: 50px;
+    }
+    .first{
+        height: 250px;
+    }
 }
